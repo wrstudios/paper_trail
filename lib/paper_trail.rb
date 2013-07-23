@@ -98,12 +98,3 @@ module PaperTrail
   end
 
 end
-
-
-ActiveSupport.on_load(:active_record) do
-  include PaperTrail::Model
-end
-
-ActiveSupport.on_load(:action_controller) do
-  include PaperTrail::Controller
-end
